@@ -1,0 +1,9 @@
+{% if wish_list %}
+<ul>
+    {% for list in wish_list %}
+    <li>{{list.name}}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No polls are available.</p>
+{% endif %}
